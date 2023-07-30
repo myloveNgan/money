@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhiệm vụ</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="mission">
+        <div class="account mission-contaner">
+            <div style="margin-top: 0 ; height: 430px;" class="conts">
+                <div class="conts-items">
+                    <div class="conts-items1">
+                        <div class="conts-items-color">
+                            Số dư hiện tại
+                        </div>
+
+                        <div style="font-size: 20px;">
+                            <p><span style="margin-bottom: 100px;">đ</span>1500</p>
+                        </div>
+                    </div>
+
+                    <div class="conts-items2">
+                        <img src="/img/money.png" alt="">
+                    </div>
+                </div>
+
+                <div class="miss-counter">
+                    <div class="miss-counter-duong">
+
+                    </div>
+                    <div class="miss-miss-counter">
+                        <div>
+                            <p>Số lượng hoàng thành</p>
+                            <p style="font-size: 16px; font-weight: bold; padding-top:5px ;">0</p>
+                        </div>
+
+                        <div style="padding-left: 8px;">
+                            <p>Nhiệm vụ</p>
+                            <p style="font-size: 16px; font-weight: bold; padding-top:5px">20%</p>
+                        </div>
+
+                        <div style=" margin-top: 20px;">
+                            <p>Hoa hồng</p>
+                            <p style="font-size: 16px; font-weight: bold; padding-top:5px"><span>đ</span>0</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="mission-button">
+                    <button>Chấp nhận đơn hàng</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="mission-slider">
+            <div class="mission-slider-contain">
+                <div style="display: flex;" class="slidler-items">
+                    <div>
+                        ******2705
+                    </div>
+
+                    <div>
+                        Vinh dự
+                    </div>
+
+                    <div>
+                        ₫5100000
+                    </div>
+                </div>
+
+                <div class="slidler-items">
+                    <div>
+                        ******1234
+                    </div>
+
+                    <div>
+                        Vinh dự
+                    </div>
+
+                    <div>
+                        ₫5200000
+                    </div>
+                </div>
+
+                <div class="slidler-items">
+                    <div>
+                        ******2722
+                    </div>
+
+                    <div>
+                        Vinh dự
+                    </div>
+
+                    <div>
+                        ₫5000000
+                    </div>
+                </div>
+
+                <div class="slidler-items">
+                    <div>
+                        ******1092
+                    </div>
+
+                    <div>
+                        Vinh dự
+                    </div>
+
+                    <div>
+                        ₫2000000
+                    </div>
+                </div>
+
+                <div class="slidler-items">
+                    <div>
+                        ******4529
+                    </div>
+
+                    <div>
+                        Vinh dự
+                    </div>
+
+                    <div>
+                        ₫1900000
+                    </div>
+                </div>
+
+                <div class="slidler-items">
+                    <div>
+                        ******2190
+                    </div>
+
+                    <div>
+                        Vinh dự
+                    </div>
+
+                    <div>
+                        ₫3220000
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-khuvuc">
+            <div>
+                <img src="/img/90l.png" alt="">
+                <span>Liên doanh</span>
+            </div>
+        </div>
+
+        <div class="account">
+            <div style="height: 200px;" class="conts">
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="modal-footer">
+                <div>
+                    <a href="home.html">
+                        <img src="img/footer1.png" alt="">
+                        <p>Trang chủ</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="mission.html">
+                        <img src="img/footer2.png" alt="">
+                        <p>Nhiệm vụ</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="order.html">
+                        <img src="img/footer3.png" alt="">
+                        <p>Đơn hàng</p>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="yourname.html">
+                        <img src="img/footer4.png" alt="">
+                        <p>Của tôi</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let x = document.getElementsByClassName('slidler-items');
+    let currentIndex = 0;
+let intervalId = setInterval(function() {
+    if (currentIndex < x.length) {
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[currentIndex].style.display = "flex";
+        currentIndex++;
+        if (currentIndex >= x.length) {
+            currentIndex = 0;
+        }
+    }
+}, 1000);
+</script>
+</html>

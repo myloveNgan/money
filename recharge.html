@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nạp tiền</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="recharge-option">
+        <div class="recharge-contain">
+                   <div class="recharge-contain-flex">
+                    <div id="home-luachon" class="recharge-contain-flex-img">
+                        <img src="img/muiten.png" alt="">
+                       </div>
+    
+                       <div>
+                         Nạp tiền
+                       </div>
+                   </div>
+                  
+                   <div class="recharge">
+                       <div class="recharge-img1">
+                        <img src="/img/imgre.png" alt="">
+                       </div>
+                       <div class="recharge-bg">
+                        <div style="padding-bottom: 20px;">
+                            Số tiền nạp
+                        </div>
+
+                        <div class="recharge-bg-input">
+                            <input type="text" placeholder="0">
+                        </div>
+                       </div>
+
+                       <div class="recharge-img2">
+                        <img src="/img/90l.png" alt="">
+                        <p style="margin-left: 10px;">Phương thức thanh toán</p>
+                       </div>
+
+                       <div class="recharge-box">
+                        <p>Bank</p>
+                        <p>momo</p>
+                        <p>QR</p>
+                        <p>Zalo</p>
+                       </div>
+                   </div>
+                   <div style="margin-top: 20px;">
+                    <button id="">Tạo lệnh nạp tiền</button>
+                   </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        let x = document.querySelector(".recharge-box");
+        x.style.display = "flex";
+    }, 1000);
+
+    document.getElementById('home-luachon').onclick = function() {
+            window.location.href = 'rechargeoption.html';
+        };
+});
+
+</script>
+</html>

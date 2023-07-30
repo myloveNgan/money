@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="pr-box">
+            <div class="login-box">
+                <div class="language">
+                    <img src="img/tải xuống.png" alt="language">
+                </div>
+
+                <div class="welcome">
+                    <div class="welcome-text">
+                        Đăng nhập
+                    </div>
+                </div>
+
+                <div class="welcome-img">
+                    <img src="img/icon2.74d4287d.png" alt="cart">
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="form-login">
+            <div class="form-container">
+                <form class="" action="">
+                    <div class="login-sdt">
+                        <div>+84</div>
+                        <input class="login" type="text" placeholder="Vui lòng nhập điện thoại">
+                    </div>
+                    <input class="chung" type="text" name="" placeholder="Vui lòng nhập mật khẩu của bạn">
+
+                    <input class="chung hidden-fields" type="text" name="" placeholder="Xác nhận mật khẩu">
+                    <input class="chung hidden-fields" type="text" name="" placeholder="Nhập mã lời mời">
+
+                    <input id="submit" style="background-color:#ffc91b ;color: #000;" class="chung" type="submit"
+                        value="Đăng nhập">
+                    <button class="register">Đăng kí</button>
+                </form>
+            </div>
+
+        </div>
+    </div>      
+</body>
+<script>
+    let x = document.querySelector('.register');
+    let y = document.querySelectorAll('.hidden-fields');
+    let submit = document.getElementById('submit');
+
+    x.onclick = function () {
+        event.preventDefault();
+        y[0].style.display = "block";
+        y[1].style.display = "block";
+        submit.value = "Tiếp tục";
+        x.innerHTML = "Đăng nhập";
+        x.id = 'newID';
+
+        let newID = document.getElementById('newID');
+
+        newID.onclick = function () {
+            event.preventDefault();
+            y[0].style.display = "none";
+            y[1].style.display = "none";
+            submit.value = "Đăng nhập";
+            x.innerHTML = "Đăng kí";
+            x.removeAttribute('id');
+        }
+    }
+
+</script>
+   
+  
+</html>
